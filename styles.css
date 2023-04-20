@@ -7,6 +7,7 @@
     --violet : #50424F;
     --global-padding: 8px 12px;
     --global-margin: 20px 0;
+    --spacing: 0 0 40px 0;
   }
 
   *{
@@ -14,8 +15,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     }
+
+   body{
+    background: var(--white);
+   }
 
   a{
     text-decoration: none;
@@ -24,16 +29,13 @@
   }
 
   h1, h2, h3{
-    font-weight: 600;
+    font-weight: 500;
+    margin: 10px 0;
   }
 
-  header{
-    width: 100%;
-    background-image: linear-gradient(180deg, rgba(80,66,79,0.3) 0%, rgba(28,29,42,0.3) 100%), url('./img/background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 600px;
+  p{
+    font-weight: 300;
+    font-size: 18px;
   }
 
   .container{
@@ -43,7 +45,18 @@
     overflow: hidden;
     border: solid blue;
   }
-  
+
+
+  /* header */
+  header{
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(80,66,79,0.5) 0%, rgba(28,29,42,0.5) 100%), url('./img/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+  }
+
   header .menu{
     text-align: right;
     margin: var(--global-margin);
@@ -62,7 +75,7 @@
   }
 
   header .menu a:hover{
-    transition: .3s ease;
+    transition: .4s ease;
     border-radius: 8px;
     background: var(--violet);
   }
@@ -77,13 +90,64 @@
 
   header .cover .cover-text{
     text-align: center;
-    border: 1px solid var(--white);
+    border: 1px solid rgb(255, 255, 255, 0.1);
     border-radius: 8px;
     padding: 20px 60px;
-    background: rgb(255, 255, 255, 0.2);
+    background: rgb(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
   }
 
   header .cover .cover-text h1, h2{
     margin: 0;
+  }
+
+
+  /* main */
+  main{
+    border: solid green;
+  }
+
+  /* about me: */
+  main .about{
+    text-align: center;
+    overflow: visible;
+    border: solid red;
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .about .photo{
+    margin-top: -60px;
+  }
+
+  .about .photo img{
+    width: 150px;
+    height: 150px;
+    vertical-align: top;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255, 0.1);
+  }
+
+  .about .about-text{
+    margin: var(--global-margin);
+  }
+
+  .about .about-text h1{
+    color: var(--orange);
+    font-size: 28px;
+  }
+
+  .about .about-text p{
+    color: var(--blue);
+  }
+
+  /* portfolio: */
+  .portfolio{
+    border: yellow solid;
+    text-align: center;
+  }
+
+  .portfolio h1{
+    font-size: 28px;
+    color: var(--orange);
   }
