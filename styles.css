@@ -149,11 +149,10 @@
     margin: auto;
     overflow: hidden;
   }
-
+/*
   main .portfolio{
     margin: var(--global-margin);
-    border: solid red;
-  }
+  }*/
 
   main .portfolio .works{
     width: 80%;
@@ -200,3 +199,48 @@
     background: var(--violet);
     border-radius: 4px;
 }
+
+footer{
+    border: solid red;
+    margin: 0;
+    padding: 40px;
+    color: var(--blue);
+}
+
+footer .contact{
+    text-align: center;
+    border: green solid;
+    padding: 20px 40px;
+}
+
+footer .contact h1{
+    font-size: 28px;
+}
+
+footer .contact .contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .contact .contact-form input[type="text"], footer .contact .contact-form input[type="email"], footer .contact .contact-form textarea{
+    border: 1px solid rgba(28, 29, 42, 0.5);
+    border-radius: 4px;
+    padding: 8px 12px;
+    color: var(--blue);
+}
+
+footer .contact .contact-form input[type="text"]::placeholder, footer .contact .contact-form input[type="email"]::placeholder, footer .contact .contact-form textarea::placeholder{
+    color: var(--blue);
+}
+
+footer .contact .contact-form input[type="text"], footer .contact .contact-form input[type="email"]{
+    width: 49%;
+    margin-bottom: 12px;
+}
+
+footer .contact .contact-form textarea{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
