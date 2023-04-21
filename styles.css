@@ -30,7 +30,7 @@
 
   h1, h2, h3{
     font-weight: 500;
-    margin: 10px 0;
+    margin: 20px 0;
   }
 
   p{
@@ -111,9 +111,12 @@
   main .about{
     text-align: center;
     overflow: visible;
-    border: solid red;
     width: 80%;
     margin-bottom: 40px;
+  }
+  
+  main h1{
+    font-size: 28px;
   }
 
   .about .photo{
@@ -134,7 +137,6 @@
 
   .about .about-text h1{
     color: var(--orange);
-    font-size: 28px;
   }
 
   .about .about-text p{
@@ -142,12 +144,58 @@
   }
 
   /* portfolio: */
-  .portfolio{
-    border: yellow solid;
+  main .portfolio{
+    background: var(--blue);
+    color: var(--white);
+    padding: 40px;
     text-align: center;
+    margin: auto;
+    overflow: hidden;
   }
 
-  .portfolio h1{
-    font-size: 28px;
-    color: var(--orange);
+  main .portfolio{
+    margin: var(--global-margin);
+    border: solid red;
   }
+
+  main .portfolio .works{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+ .portfolio .works .work{
+    width: 30%;
+    border: solid aliceblue;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.portfolio .works .work .thumb{
+    width: 100%;
+}
+
+.portfolio .works .work .thumb img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: solid white;
+}
+
+.portfolio .works .work .description{
+    text-align: center;
+}
+
+.portfolio .works .work .description p{
+    margin-bottom: 6px;
+}
+
+.portfolio .works .work .description span{
+    margin: 0 4px;
+    display: inline-block;
+    padding: 4px 6px;
+    border: solid blue;
+}
