@@ -234,6 +234,11 @@ footer .contact .contact-form input[type="text"]::placeholder, footer .contact .
     color: var(--blue);
 }
 
+footer .contact .contact-form input[type="text"]:focus, footer .contact .contact-form input[type="email"]:focus, footer .contact .contact-form textarea:focus{
+  border: solid 2px var(--violet);
+}
+
+
 footer .contact .contact-form input[type="text"], footer .contact .contact-form input[type="email"]{
     width: 49%;
     margin-bottom: 12px;
@@ -241,6 +246,24 @@ footer .contact .contact-form input[type="text"], footer .contact .contact-form 
 
 footer .contact .contact-form textarea{
     width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 200px;
     margin-bottom: 16px;
-}
+  }
 
+  footer .contact .contact-form input[type="submit"]{
+    margin: auto;
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  footer .contact .contact-form input[type="submit"]:hover{
+    transition: .4s ease;
+    background: var(--violet);
+  }
