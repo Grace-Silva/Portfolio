@@ -201,16 +201,13 @@
 }
 
 footer{
-    border: solid red;
-    margin: 0;
-    padding: 40px;
     color: var(--blue);
 }
 
 footer .contact{
     text-align: center;
-    border: green solid;
-    padding: 20px 40px;
+    padding: 20px 60px;
+    margin: 40px auto;
 }
 
 footer .contact h1{
@@ -266,4 +263,43 @@ footer .contact .contact-form textarea{
   footer .contact .contact-form input[type="submit"]:hover{
     transition: .4s ease;
     background: var(--violet);
+  }
+
+   .social-media{
+    padding: 3q0px 40px;
+    background: var(--blue);
+    color: var(--white);
+  }
+
+  .social-media h2{
+    font-size: 24px;
+    text-align: center;  
+  }
+
+  .social-media .links{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-media .links a{
+    display: inline-block;
+    padding: 8px;
+    color: var(--white);
+    margin: 0 4px;
+  }
+
+  .social-media .links a:hover{
+    transition: .3s ease;
+    transform: scale(1.1);
+  }
+
+
+  .social-media .links a i{
+    font-size: 22px;
+    color: var(--white);
+    margin: 0 8px;
   }
