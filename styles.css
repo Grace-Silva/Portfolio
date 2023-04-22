@@ -110,6 +110,7 @@
     overflow: visible;
     width: 80%;
     margin-bottom: 40px;
+    border: solid green;
   }
   
   main h1{
@@ -213,7 +214,7 @@ footer{
 
 footer .contact{
     text-align: center;
-    padding: 20px 60px;
+    padding: 20px 0px;
     margin: 40px auto;
 }
 
@@ -331,4 +332,22 @@ footer .contact .contact-form textarea{
   }
 
   /* tablets: */
-  @media only screen and(max-width:)
+  @media only screen and (max-width: 768px){
+
+    main .portfolio .works{
+      width: 100%;
+    }
+
+    .portfolio .works .work{
+      width: 48%;
+    }
+
+    footer .contact{
+      padding: 20px;
+    }
+
+    .social-media .links{
+      width: 100%;
+    }
+
+  }
