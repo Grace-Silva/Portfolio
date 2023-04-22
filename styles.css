@@ -420,6 +420,10 @@ footer .contact .contact-form textarea{
       margin-bottom: 24px;
     }
 
+    footer .contact{
+      padding: 0;
+    }
+
     footer .contact h1{
       font-size: 22px;
     }
@@ -459,8 +463,5 @@ footer .contact .contact-form textarea{
       height: 120px;
     }
 
-    footer .contact{
-      padding: 0;
-    }
   }
   
