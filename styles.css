@@ -381,12 +381,56 @@ footer .contact .contact-form textarea{
       padding: 20px;
     }
     .social-media .links{
-      width: 80%;
+      width: 90%;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-around;
+      padding: 0px ;
     }
     .social-media .links a{
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
+
+  }
+
+  /* small phones: */
+  @media only screen and (max-width: 450px){
     
+    a, p{
+      font-size: 16px;
+    }
+
+    header .menu{
+      margin: 20px 0px;
+    }
+
+    header .menu a{
+      margin: 0 8px;
+    }
+
+    main h1{
+      font-size: 22px;
+    }
+
+    main p{
+      font-size: 16px;
+    }
+
+    main .portfolio .works .work{
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    footer .contact h1{
+      font-size: 22px;
+    }
+
+    footer .contact .contact-form input[type="text"], footer .contact .contact-form input[type="email"]{
+      width: 100%;
+      margin-bottom: 12px;
+    }
+
+    .social-media{
+      padding: 10px;
+    }
+
   }
