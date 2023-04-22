@@ -292,6 +292,7 @@ footer .contact .contact-form textarea{
     padding: 8px 12px;
     display: flex;
     justify-content: space-between;
+    border: solid fuchsia;
   }
 
   .social-media .links a{
@@ -350,4 +351,42 @@ footer .contact .contact-form textarea{
       width: 100%;
     }
 
+  }
+
+  /* phones: */
+  @media only screen and (max-width: 600px){
+
+    header .menu a{
+      margin: 0 20px;
+      border: solid yellowgreen;
+    }
+
+    main .about{
+      width: 90%;
+    }
+
+    main .portfolio .works{
+      justify-content: space-around;
+    }
+
+    main .portfolio .works .work{
+      width: 45%;
+    }
+
+    footer .contact{
+      padding: 10px;
+    }
+
+    .social-media{
+      padding: 20px;
+    }
+    .social-media .links{
+      width: 80%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .social-media .links a{
+      margin-bottom: 8px;
+    }
+    
   }
