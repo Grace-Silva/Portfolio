@@ -155,7 +155,7 @@
   }*/
 
   main .portfolio .works{
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -192,8 +192,15 @@
     margin-bottom: 6px;
 }
 
+.portfolio .work .work .description .technologies{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .portfolio .works .work .description span{
-    margin: 0 4px;
+    margin: 2px 4px;
     display: inline-block;
     padding: 4px 6px;
     background: var(--violet);
@@ -266,7 +273,7 @@ footer .contact .contact-form textarea{
   }
 
    .social-media{
-    padding: 3q0px 40px;
+    padding: 30px 40px;
     background: var(--blue);
     color: var(--white);
   }
@@ -274,6 +281,7 @@ footer .contact .contact-form textarea{
   .social-media h2{
     font-size: 24px;
     text-align: center;  
+    margin-bottom: 12px;
   }
 
   .social-media .links{
@@ -303,3 +311,24 @@ footer .contact .contact-form textarea{
     color: var(--white);
     margin: 0 8px;
   }
+
+  /* responsive design */
+
+  /* laptos: */
+
+  @media only screen and (max-width: 992px){
+
+    header .menu{
+      border: solid yellow;
+      text-align: center;
+    }
+
+    header .menu a{
+      margin: 20px 40px;
+      border: solid yellowgreen;
+    }
+
+  }
+
+  /* tablets: */
+  @media only screen and(max-width:)
